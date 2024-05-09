@@ -1,6 +1,5 @@
 '''
-Tests for jwt flask app.
-adding more comments for testing build process.
+Tests for jwt flask app..
 '''
 import os
 import json
@@ -26,7 +25,7 @@ def client():
 def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.json == 'Healthy'
+    assert response.json == 'FALSE'
 
 
 def test_auth(client):
